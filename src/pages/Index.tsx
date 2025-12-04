@@ -18,7 +18,7 @@ const Index = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'services', 'portfolio', 'blog', 'contact'];
+      const sections = ['home', 'about', 'services', 'portfolio', 'contact'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -91,30 +91,6 @@ const Index = () => {
     }
   ];
 
-  const blogPosts = [
-    {
-      id: 1,
-      title: 'Топ-5 трендов в создании рилс 2024',
-      excerpt: 'Разбираем самые актуальные приёмы и эффекты для вирусных видео',
-      date: '15 Ноября 2024',
-      readTime: '5 мин'
-    },
-    {
-      id: 2,
-      title: 'Как выбрать правильное оборудование',
-      excerpt: 'Полный гайд по выбору камер, объективов и аксессуаров для видеосъёмки',
-      date: '8 Ноября 2024',
-      readTime: '8 мин'
-    },
-    {
-      id: 3,
-      title: 'Секреты идеальной композиции',
-      excerpt: 'Правила кадрирования и композиции для профессиональных снимков',
-      date: '1 Ноября 2024',
-      readTime: '6 мин'
-    }
-  ];
-
   return (
     <div className="min-h-screen relative" style={{ backgroundImage: 'url(https://cdn.poehali.dev/files/7dc675db-aad0-45ae-b015-9171d2f70123.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
       <div className="absolute inset-0 bg-background/40 backdrop-blur-[2px] pointer-events-none"></div>
@@ -128,7 +104,6 @@ const Index = () => {
                 { id: 'about', label: 'О себе' },
                 { id: 'services', label: 'Услуги' },
                 { id: 'portfolio', label: 'Портфолио' },
-                { id: 'blog', label: 'Блог' },
                 { id: 'contact', label: 'Контакты' }
               ].map((item) => (
                 <button
@@ -255,64 +230,6 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="blog" className="py-20 px-6 relative z-10">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-5xl font-heading font-bold gradient-text mb-4">Блог</h2>
-            <p className="text-xl text-muted-foreground">Делюсь опытом и советами</p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-6">
-            {blogPosts.map((post, index) => (
-              <Card
-                key={post.id}
-                className="bg-card border-border hover:border-primary/50 transition-all hover-scale animate-slide-up cursor-pointer"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-3 text-sm text-muted-foreground mb-4">
-                    <span>{post.date}</span>
-                    <span>•</span>
-                    <span>{post.readTime}</span>
-                  </div>
-                  <h3 className="text-xl font-heading font-bold mb-3">{post.title}</h3>
-                  <p className="text-muted-foreground mb-4">{post.excerpt}</p>
-                  <div className="flex items-center text-primary font-medium">
-                    Читать далее
-                    <Icon name="ArrowRight" size={16} className="ml-2" />
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-          <div className="flex justify-center gap-6 mt-12 pt-8">
-            <a
-              href="https://www.instagram.com/vicky__wws?igsh=MWZuOGc4cmpkYWtjZQ%3D%3D&utm_source=qr"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-14 h-14 rounded-full bg-gradient-to-r from-primary to-secondary hover:scale-110 flex items-center justify-center transition-all hover-scale"
-            >
-              <Icon name="Instagram" size={24} className="text-white" />
-            </a>
-            <a
-              href="https://m.youtube.com/@karamelka_tv_/videos"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-14 h-14 rounded-full bg-gradient-to-r from-secondary to-accent hover:scale-110 flex items-center justify-center transition-all hover-scale"
-            >
-              <Icon name="Youtube" size={24} className="text-white" />
-            </a>
-            <a
-              href="https://t.me/+SSGFgiQfbO1lNzMy"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-14 h-14 rounded-full bg-gradient-to-r from-accent to-primary hover:scale-110 flex items-center justify-center transition-all hover-scale"
-            >
-              <Icon name="Send" size={24} className="text-white" />
-            </a>
-          </div>
-        </div>
-      </section>
-
       <section id="contact" className="py-20 px-6 bg-card/30 relative z-10">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-16 animate-fade-in">
@@ -341,18 +258,30 @@ const Index = () => {
                 </Button>
               </form>
               <div className="flex justify-center gap-6 mt-8 pt-8 border-t border-border">
-                {[
-                  { icon: 'Instagram', label: 'Instagram' },
-                  { icon: 'Youtube', label: 'YouTube' },
-                  { icon: 'Mail', label: 'Email' }
-                ].map((social) => (
-                  <button
-                    key={social.label}
-                    className="w-12 h-12 rounded-full bg-primary/20 hover:bg-primary/30 flex items-center justify-center transition-colors hover-scale"
-                  >
-                    <Icon name={social.icon} size={20} className="text-primary" />
-                  </button>
-                ))}
+                <a
+                  href="https://www.instagram.com/vicky__wws?igsh=MWZuOGc4cmpkYWtjZQ%3D%3D&utm_source=qr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-14 h-14 rounded-full bg-gradient-to-r from-primary to-secondary hover:scale-110 flex items-center justify-center transition-all hover-scale"
+                >
+                  <Icon name="Instagram" size={24} className="text-white" />
+                </a>
+                <a
+                  href="https://m.youtube.com/@karamelka_tv_/videos"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-14 h-14 rounded-full bg-gradient-to-r from-secondary to-accent hover:scale-110 flex items-center justify-center transition-all hover-scale"
+                >
+                  <Icon name="Youtube" size={24} className="text-white" />
+                </a>
+                <a
+                  href="https://t.me/+SSGFgiQfbO1lNzMy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-14 h-14 rounded-full bg-gradient-to-r from-accent to-primary hover:scale-110 flex items-center justify-center transition-all hover-scale"
+                >
+                  <Icon name="Send" size={24} className="text-white" />
+                </a>
               </div>
             </CardContent>
           </Card>
