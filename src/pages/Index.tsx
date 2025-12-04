@@ -284,6 +284,32 @@ const Index = () => {
               </Card>
             ))}
           </div>
+          <div className="flex justify-center gap-6 mt-12 pt-8">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-14 h-14 rounded-full bg-gradient-to-r from-primary to-secondary hover:scale-110 flex items-center justify-center transition-all hover-scale"
+            >
+              <Icon name="Instagram" size={24} className="text-white" />
+            </a>
+            <a
+              href="https://youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-14 h-14 rounded-full bg-gradient-to-r from-secondary to-accent hover:scale-110 flex items-center justify-center transition-all hover-scale"
+            >
+              <Icon name="Youtube" size={24} className="text-white" />
+            </a>
+            <a
+              href="https://t.me"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-14 h-14 rounded-full bg-gradient-to-r from-accent to-primary hover:scale-110 flex items-center justify-center transition-all hover-scale"
+            >
+              <Icon name="Send" size={24} className="text-white" />
+            </a>
+          </div>
         </div>
       </section>
 
