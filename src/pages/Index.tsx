@@ -133,7 +133,7 @@ const Index = () => {
               <span className="gradient-text-3d">визуальные истории</span>
             </h2>
             <p className="text-xl md:text-2xl text-muted-foreground mb-12 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              Рилсмейкер, видеограф и фотограф с 5+ лет опыта.
+              Контент-мейкер с 5+ лет опыта.
               <br />
               Превращаю моменты в искусство.
             </p>
