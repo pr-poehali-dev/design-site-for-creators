@@ -116,7 +116,7 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen relative" style={{ backgroundImage: 'url(https://cdn.poehali.dev/files/a6d0bdde-8878-43cf-aafe-3086b8a9ab89.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
