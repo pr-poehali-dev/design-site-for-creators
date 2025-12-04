@@ -141,4 +141,26 @@
       6px 6px 0px rgba(232, 121, 249, 0.05),
       7px 7px 10px rgba(0, 0, 0, 0.3);
   }
+
+  .gradient-text-3d {
+    @apply bg-clip-text text-transparent;
+    background-image: radial-gradient(
+      circle at 30% 50%,
+      #e9d5ff 0%,
+      #fce7f3 25%,
+      #d8b4fe 50%,
+      #f9a8d4 75%,
+      #c4b5fd 100%
+    );
+    background-size: 200% 200%;
+    animation: gradient-shift 8s ease infinite;
+    filter: drop-shadow(1px 1px 0px rgba(232, 121, 249, 0.4))
+      drop-shadow(2px 2px 0px rgba(232, 121, 249, 0.35))
+      drop-shadow(3px 3px 0px rgba(232, 121, 249, 0.3))
+      drop-shadow(4px 4px 0px rgba(232, 121, 249, 0.25))
+      drop-shadow(5px 5px 0px rgba(232, 121, 249, 0.2))
+      drop-shadow(6px 6px 0px rgba(232, 121, 249, 0.15))
+      drop-shadow(7px 7px 0px rgba(232, 121, 249, 0.1))
+      drop-shadow(8px 8px 15px rgba(0, 0, 0, 0.4));
+  }
 }

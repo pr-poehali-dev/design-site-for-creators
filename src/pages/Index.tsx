@@ -153,9 +153,9 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-6xl md:text-8xl font-heading font-black mb-6 animate-fade-in">
-              <span className="gradient-text">Создаю</span>
+              <span className="gradient-text-3d">Создаю</span>
               <br />
-              <span className="text-3d">визуальные</span> истории
+              <span className="gradient-text-3d">визуальные истории</span>
             </h2>
             <p className="text-xl md:text-2xl text-muted-foreground mb-12 animate-fade-in" style={{ animationDelay: '0.2s' }}>
               Рилсмейкер, видеограф и фотограф с 5+ лет опыта.
