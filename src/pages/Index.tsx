@@ -155,7 +155,7 @@ const Index = () => {
             <h2 className="text-6xl md:text-8xl font-heading font-black mb-6 animate-fade-in">
               <span className="gradient-text">Создаю</span>
               <br />
-              визуальные истории
+              <span className="text-3d">визуальные</span> истории
             </h2>
             <p className="text-xl md:text-2xl text-muted-foreground mb-12 animate-fade-in" style={{ animationDelay: '0.2s' }}>
               Рилсмейкер, видеограф и фотограф с 5+ лет опыта.
