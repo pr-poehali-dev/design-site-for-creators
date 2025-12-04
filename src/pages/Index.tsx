@@ -245,8 +245,8 @@ const Index = () => {
                     <Input placeholder="Ваше имя" className="bg-background" />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium mb-2">Email</label>
-                    <Input type="email" placeholder="your@email.com" className="bg-background" />
+                    <label className="block text-sm font-medium mb-2">Telegram</label>
+                    <Input type="text" placeholder="@ваш_ник" className="bg-background" />
                   </div>
                 </div>
                 <div>
