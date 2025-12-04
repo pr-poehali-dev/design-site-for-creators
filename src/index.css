@@ -106,6 +106,14 @@
   }
 
   .gradient-text {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent;
+    @apply bg-clip-text text-transparent;
+    background-image: radial-gradient(
+      circle at 30% 50%,
+      #e9d5ff 0%,
+      #fce7f3 25%,
+      #d8b4fe 50%,
+      #f9a8d4 75%,
+      #c4b5fd 100%
+    );
   }
 }
