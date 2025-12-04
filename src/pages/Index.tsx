@@ -117,6 +117,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen relative" style={{ backgroundImage: 'url(https://cdn.poehali.dev/files/a6d0bdde-8878-43cf-aafe-3086b8a9ab89.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
+      <div className="absolute inset-0 bg-background/40 backdrop-blur-[2px] pointer-events-none"></div>
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
@@ -148,7 +149,7 @@ const Index = () => {
         </div>
       </nav>
 
-      <section id="home" className="pt-32 pb-20 px-6">
+      <section id="home" className="pt-32 pb-20 px-6 relative z-10">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-6xl md:text-8xl font-heading font-black mb-6 animate-fade-in">
@@ -173,7 +174,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="about" className="py-20 px-6 bg-card/30">
+      <section id="about" className="py-20 px-6 bg-card/30 relative z-10">
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-slide-up">
@@ -203,7 +204,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="services" className="py-20 px-6">
+      <section id="services" className="py-20 px-6 relative z-10">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-5xl font-heading font-bold gradient-text mb-4">Услуги</h2>
@@ -229,7 +230,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="portfolio" className="py-20 px-6 bg-card/30">
+      <section id="portfolio" className="py-20 px-6 bg-card/30 relative z-10">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-5xl font-heading font-bold gradient-text mb-4">Портфолио</h2>
@@ -255,7 +256,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="blog" className="py-20 px-6">
+      <section id="blog" className="py-20 px-6 relative z-10">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-5xl font-heading font-bold gradient-text mb-4">Блог</h2>
@@ -287,7 +288,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="contact" className="py-20 px-6 bg-card/30">
+      <section id="contact" className="py-20 px-6 bg-card/30 relative z-10">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-5xl font-heading font-bold gradient-text mb-4">Контакты</h2>
@@ -333,7 +334,7 @@ const Index = () => {
         </div>
       </section>
 
-      <footer className="py-8 px-6 border-t border-border">
+      <footer className="py-8 px-6 border-t border-border relative z-10">
         <div className="container mx-auto max-w-6xl">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-muted-foreground text-sm">© 2024 Creator Portfolio. Все права защищены.</p>
