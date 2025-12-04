@@ -19,8 +19,8 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				sans: ['Inter', 'system-ui', 'sans-serif'],
-				heading: ['Montserrat', 'system-ui', 'sans-serif'],
+				sans: ['Courier New', 'Courier', 'monospace'],
+				heading: ['Courier New', 'Courier', 'monospace'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
