@@ -116,7 +116,7 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen relative" style={{ backgroundImage: 'url(https://cdn.poehali.dev/files/cc454bf1-def7-4062-af72-0f08ab471c1d.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
+    <div className="min-h-screen relative" style={{ backgroundImage: 'url(https://cdn.poehali.dev/files/7dc675db-aad0-45ae-b015-9171d2f70123.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
       <div className="absolute inset-0 bg-background/40 backdrop-blur-[2px] pointer-events-none"></div>
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
         <div className="container mx-auto px-6 py-4">
