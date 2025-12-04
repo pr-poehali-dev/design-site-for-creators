@@ -286,7 +286,7 @@ const Index = () => {
           </div>
           <div className="flex justify-center gap-6 mt-12 pt-8">
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/vicky__wws?igsh=MWZuOGc4cmpkYWtjZQ%3D%3D&utm_source=qr"
               target="_blank"
               rel="noopener noreferrer"
               className="w-14 h-14 rounded-full bg-gradient-to-r from-primary to-secondary hover:scale-110 flex items-center justify-center transition-all hover-scale"
@@ -294,7 +294,7 @@ const Index = () => {
               <Icon name="Instagram" size={24} className="text-white" />
             </a>
             <a
-              href="https://youtube.com"
+              href="https://m.youtube.com/@karamelka_tv_/videos"
               target="_blank"
               rel="noopener noreferrer"
               className="w-14 h-14 rounded-full bg-gradient-to-r from-secondary to-accent hover:scale-110 flex items-center justify-center transition-all hover-scale"
@@ -302,7 +302,7 @@ const Index = () => {
               <Icon name="Youtube" size={24} className="text-white" />
             </a>
             <a
-              href="https://t.me"
+              href="https://t.me/+SSGFgiQfbO1lNzMy"
               target="_blank"
               rel="noopener noreferrer"
               className="w-14 h-14 rounded-full bg-gradient-to-r from-accent to-primary hover:scale-110 flex items-center justify-center transition-all hover-scale"
