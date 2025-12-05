@@ -149,7 +149,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-slide-up">
               <img
-                src="https://cdn.poehali.dev/projects/597adbb7-6455-41fc-bdd1-94c834f9d6e5/files/0321d730-5cc1-46f1-bd38-d7e3c12d2ab6.jpg"
+                src="https://cdn.poehali.dev/files/3ed19911-e8a8-4c97-896d-f9145f9cc7b5.jpeg"
                 alt="О себе"
                 className="rounded-2xl shadow-2xl hover-scale"
               />
